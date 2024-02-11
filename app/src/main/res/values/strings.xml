@@ -1,0 +1,40 @@
+<resources>
+  <string name="app_name">CareDrivers</string>
+  <string name="dialog_title">Are you sure?</string>
+  <string name="dialog_text">Are you sure you want to cancel this claim?\nThis cannot be undone.</string>
+  <string name="dialog_cancel">Nevermind</string>
+  <string name="dialog_ok">Yes</string>
+  <string name="my_rides">My Rides</string>
+  <string name="ride_details">Ride Details</string>
+  <string name="estimated">ESTIMATED</string>
+  <string name="waypoint_type_description">Waypoint Type</string>
+  <string name="title_activity_trip_details">Ride Details</string>
+  <string name="navigation_drawer_open">Open</string>
+  <string name="navigation_drawer_close">Close</string>
+  <string name="time_range">%1$s - %2$s</string>
+  <string name="rider">(%1$s)</string>
+  <string name="rider_and_booster">(%1$s \u2022 %2$s)</string>
+  <string name="time_range_plus_rider">%1$s %2$s</string>
+  <string name="route">%1$d. %2$s</string>
+  <string name="est_amount">est. $%1$d</string>
+  <string name="series">This trip is part of a series.</string>
+  <string name="pickup">Pickup</string>
+  <string name="dropOff">Drop-off</string>
+  <string name="cancelTrip">Cancel This Trip</string>
+  <string name="tripId">Trip ID:%1$s</string>
+  <string name="miles">%1$d mi</string>
+  <string name="minutes">%1$d min</string>
+  <string name="trip_description">Trip ID: %1$s \u2022 %2$.2f mi \u2022 %3$.0f min</string>
+  <string name="pickup_icon_description">Pickup Icon</string>
+  <string name="dropOff_icon_description">Dropoff Icon</string>
+  <string name="this_trip_is_part_of_a_series">This trip is part of a series</string>
+  <string name="close_description">Close</string>
+  <plurals name="riders">
+    <item quantity="one">%d rider</item>
+    <item quantity="other">%d riders</item>
+  </plurals>
+  <plurals name="boosters">
+    <item quantity="one">%d booster</item>
+    <item quantity="other">%d boosters</item>
+  </plurals>
+</resources>

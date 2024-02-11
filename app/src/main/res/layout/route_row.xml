@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:clickable="false"
+  android:focusable="false"
+  android:id="@+id/routeInfo"
+  android:layout_margin="8dp"
+  style="@style/RouteText"
+  tools:text="1. 2565 Underhill Ave, Anaheim 92806"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+</TextView>

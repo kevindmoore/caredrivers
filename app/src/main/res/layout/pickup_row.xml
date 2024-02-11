@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <ImageView
+    android:id="@+id/pickupIcon"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/diamond"
+    android:contentDescription="@string/pickup_icon_description" />
+
+  <TextView
+    android:id="@+id/pickupLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:text="@string/pickup"
+    app:layout_constraintStart_toEndOf="@+id/pickupIcon"
+    app:layout_constraintTop_toTopOf="@+id/pickupIcon" />
+
+  <TextView
+    android:id="@+id/pickupLocation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    tools:text="1 World Way, Los Angeles, CA"
+    app:layout_constraintStart_toEndOf="@+id/pickupIcon"
+    app:layout_constraintTop_toBottomOf="@+id/pickupLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

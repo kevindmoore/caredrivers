@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Theme.CareDrivers" parent="Theme.AppCompat.Light.NoActionBar" />
+
+  <style name="ToolbarTitle">
+    <item name="android:fontFamily">sans-serif-light</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+  </style>
+
+
+  <style name="RideDate">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/titleBlue</item>
+    <item name="android:fontWeight">700</item>
+  </style>
+  <style name="RideTime">
+    <item name="android:textSize">12sp</item>
+  </style>
+  <style name="CardRideTime">
+    <item name="android:textSize">14sp</item>
+    <item name="android:fontWeight">700</item>
+  </style>
+  <style name="EstimatedLabel">
+    <item name="android:textSize">14sp</item>
+  </style>
+  <style name="EstimatedAmount">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/titleBlue</item>
+  </style>
+ <style name="RouteText">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/black</item>
+  </style>
+ <style name="CancelText">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/red</item>
+  </style>
+  <style name="DialogTitle">
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:fontWeight">700</item>
+  </style>
+  <style name="DialogText">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/lightGrey</item>
+  </style>
+  <style name="DialogCancelButton">
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:fontWeight">700</item>
+  </style>
+
+  <style name="DialogConfirmationButton">
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">@color/titleBlue</item>
+    <item name="android:fontWeight">700</item>
+  </style>
+
+  <style name="EstimatedTextDetails">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:fontWeight">700</item>
+  </style>
+
+</resources>
