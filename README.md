@@ -14,6 +14,8 @@ Android APK Link: https://drive.google.com/file/d/1X2U3JC5lwWATPSPFuGX_EjXaXBTuf
 ### Images
 https://drive.google.com/file/d/1n5_00muIaaOEYoI-m_f9zkn8zOXNvs5i/view?usp=sharing
 https://drive.google.com/file/d/1CzMrFCaPL7hbCIvrwtnapXaEqD1Qek1S/view?usp=sharing
+![Screenshot_20240210_192256](https://github.com/kevindmoore/caredrivers/assets/1521266/470dd5cf-a292-4d7f-95cb-1682cb732655)
+![Screenshot_20240210_192256](https://github.com/kevindmoore/caredrivers/assets/1521266/482ac886-0665-4c8c-9db4-fb7018b2bd17)
 
 ### Notes
 All code except model files were commented. There is one unit test for testing the network code.
