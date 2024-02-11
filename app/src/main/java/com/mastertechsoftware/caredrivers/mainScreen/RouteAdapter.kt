@@ -10,7 +10,7 @@ import com.mastertechsoftware.caredrivers.databinding.RouteRowBinding
 /**
  * Adapter for the route Row. Just shows a numbered Address
  */
-class RouteAdapter(private val accountLocations: List<Location>, private val itemClickListener: () -> Unit) :
+class RouteAdapter(private val accountLocations: List<Location>) :
   RecyclerView.Adapter<RouteAdapter.RouteViewHolder>() {
 
   inner class RouteViewHolder(val routeRow: RouteRowBinding) :
@@ -22,9 +22,6 @@ class RouteAdapter(private val accountLocations: List<Location>, private val ite
         position+1,
         accountLocations[position].address
       )
-      routeRow.routeInfo.setOnClickListener {
-        itemClickListener()
-      }
     }
   }
 

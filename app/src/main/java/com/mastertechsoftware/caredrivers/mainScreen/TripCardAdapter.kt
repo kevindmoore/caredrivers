@@ -1,5 +1,6 @@
 package com.mastertechsoftware.caredrivers.mainScreen
 
+import android.annotation.SuppressLint
 import android.graphics.Typeface
 import android.text.Spannable
 import android.text.SpannableString
@@ -20,12 +21,14 @@ import com.mastertechsoftware.caredrivers.mainScreen.MainViewModel.Companion.tim
 import timber.log.Timber
 import java.text.ParseException
 
+typealias ItemListener = (Trip) -> Unit
+typealias ClickListener = () -> Unit
 /**
  * Adapter for the list of trips
  */
 class TripCardAdapter(
   private val trips: List<Trip>,
-  private val itemClickListener: (Trip) -> Unit
+  private val itemClickListener: ItemListener
 ) :
   RecyclerView.Adapter<TripCardAdapter.TripCardViewHolder>() {
   /**
@@ -34,6 +37,7 @@ class TripCardAdapter(
   inner class TripCardViewHolder(private val tripCardBinding: TripCardBinding) :
     ViewHolder(tripCardBinding.root) {
 
+    @SuppressLint("ClickableViewAccessibility")
     fun bind(trip: Trip, position: Int) {
       val accountLocations = getTripAccountLocations(trip)
       try {
@@ -78,11 +82,9 @@ class TripCardAdapter(
       }
       tripCardBinding.waypoints.also {
         it.layoutManager = LinearLayoutManager(tripCardBinding.root.context)
-        it.adapter = RouteAdapter(accountLocations) {
-          itemClickListener(trips[position])
-        }
+        it.adapter = RouteAdapter(accountLocations)
       }
-      tripCardBinding.overlay.setOnClickListener {
+      tripCardBinding.tripCard.itemClickListener = {
         itemClickListener(trips[position])
       }
     }
